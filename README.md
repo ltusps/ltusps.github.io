@@ -1,13 +1,11 @@
-# STATIC
+# This page was created by Dr. B
 
-**This directory is not required, you can delete it if you don't want to use it.**
+## If you are interested in becoming a maintainer of the LTU SPS please get in touch with Dr. B at bbhattach[at]ltu[dot]edu
 
-This directory contains your static files.
-Each file inside this directory is mapped to `/`.
-Thus you'd want to delete this README.md before deploying to production.
+### The files in this folder generates the site https://ltusps.github.io/
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
+### The main page is index.html
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/assets#static).
+### When creating a new page which you'd want to show as https://ltusps.github.io/<new-page> you should copy index.html into new-page-name.html within this folder. You'd then want to edit the new-page-name.html to make it look like the page that you want.
 
-BB changes TEST!!!!!!!!!!!
+### It might be a good idea to use VSCode to edit the pages before you push it up to github
