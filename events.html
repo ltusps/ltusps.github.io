@@ -1,1 +1,143 @@
-This is the events page. As you can see, it is currently under construction, so please return to the homepage (https://ltusps.github.io/) for event information.
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>LTU SPS Events</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">
+      <img src="assets/atom.svg" width="30" height="30" alt="">
+      LTU SPS
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="https://forms.gle/5A5rmJRPw9caryBSA" target="_blank">Join Us <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" id="eventsDropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+		  <div class="dropdown-menu" aria-labelledby="eventsDropdown" style="background-color: #007bff;">
+			<a class="nav-link dropdown-item text-white" href="events.html">Event Information</a>
+			<a class="nav-link dropdown-item text-white" href="https://calendar.google.com/calendar/u/2?cid=bHR1LnNwc0BnbWFpbC5jb20" target="_blank">Event Calendar</a>
+		  </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Homepage Banner -->
+  <div class="jumbotron jumbotron-fluid container-fluid" style="padding-top: 10px; padding-bottom: 10px; margin-top: 5px; margin-bottom: 5px;">
+    <div class="container" style="text-align: center">
+      <h1 class="display-4"><strong>SPS Events</strong></h1>
+      <h4 class="lead"><strong>Lawrence Technological University</strong></h4>
+    </div>
+  </div>
+  <h5 style="text-align: center;">Click the title of each event to see information about them!</h5>
+  <div class = "container-fluid">
+	  <div class="row">
+		<div class="col-lg-6" style="border-right: 1px solid darkgray">
+			<h2 style="text-align: center">Regular Events</h2>
+			<hr style="width: 45%; border-color: silver; background-color: silver; color: silver;">
+			<div class="accordion" id="regularEventsAccord">
+				<!--Meetings-->
+				<div class="card">
+					<button class = "btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#meetingsInfo" aria-expanded="false" aria-controls="meetingsInfo">
+						<h4 class="card-title" id="meetingTitle" style="text-align: center;">SPS Meetings</h3>
+					</button>
+					<div id="meetingsInfo" class="collapse" aria-labelledby="meetingTitle" data-parent="#regularEventsAccord">
+						<div class="card-body">
+							<h5><strong>Where:</strong> Virtual</h5>
+							<h5><strong>When:</strong> Every other Wednesday at 12 PM EST/EDT, and the interleaving Fridays at 11 AM EST/EDT</h5>
+							<p>At our regular SPS Meetings, we discuss upcoming events, fundraisng, recruitment, our participation in the <a href="https://www.aps.org/programs/innovation/fund/idea.cfm">APS-IDEA</a>, and other topics of the day. Like all other SPS events, meetings are open to all!</p>
+						</div>
+					</div>
+				</div>
+				<!--Study Sessions-->
+				<div class="card">
+					<button class = "btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#studyInfo" aria-expanded="false" aria-controls="studyInfo">
+						<h4 class="card-title" id="studyTitle" style="text-align: center;">Study/Tutoring Sessions</h3>
+					</button>
+					<div id="studyInfo" class="collapse" aria-labelledby="studyTitle" data-parent="#regularEventsAccord">
+						<div class="card-body">
+							<h5><strong>Where:</strong> Virtual</h5>
+							<h5><strong>When:</strong> Every other Tuesday from 12 PM to 2 PM EST/EDT</h5>
+							<p>At our Study and Tutoring Sessions, students can come to study as a group, and recieve tutoring if necessary, particularly in math and physics.</p>
+						</div>
+					</div>
+				</div>
+				<!--Game Night-->
+				<div class="card">
+					<button class = "btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#gameInfo" aria-expanded="false" aria-controls="gameInfo">
+						<h4 class="card-title" id="gameTitle" style="text-align: center;">Game Nights</h3>
+					</button>
+					<div id="gameInfo" class="collapse" aria-labelledby="gameTitle" data-parent="#regularEventsAccord">
+						<div class="card-body">
+							<h5><strong>Where:</strong> Virtual</h5>
+							<h5><strong>When:</strong> Every Saturday at 4 PM EDT/EST</h5>
+							<p>At game night, we play video games online as a group! We make sure to play games that are easily accessible even for those who do not have them!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<h2 style="text-align: center">Special Events</h2>
+			<hr style="width: 45%; border-color: silver; background-color: silver; color: silver;">
+			<!--Meetings-->
+			<div class="card">
+				<button class = "btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#guestLectureInfo" aria-expanded="true" aria-controls="guestLectureInfo">
+					<h4 class="card-title" id="guestLectureTitle" style="text-align: center;">Guest Lecture</h3>
+				</button>
+				<div id="guestLectureInfo" class="collapse show" aria-labelledby="guestLectureTitle">
+					<div class="card-body">
+						<h5><strong>Where:</strong> Virtual</h5>
+						<h5><strong>When:</strong> 13 October 2020, 12:30-2 PM EST/EDT</h5>
+						<p>Drs. Kaori Sekai and Elliot Schmitt will be talking to LTU Students and SPS Members over Zoom about their careers and current activities.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+  </div>
+  <hr style="width: 75%; border-color: silver; background-color: silver; color: silver;">
+  <h5 style="text-align: center;">If you would like to stay up to date, please <a href="https://forms.gle/5A5rmJRPw9caryBSA" target="_blank">sign up to our mailing list</a> for updates and <a href="https://calendar.google.com/calendar/u/2?cid=bHR1LnNwc0BnbWFpbC5jb20" target="_blank">check our calendar</a> to save these events on Google.</h5>
+  <!-- Footer -->
+  <footer class="footer bg-primary py-4 my-4">
+    <div class="container">
+      <p class="text-white">Copyright (c) Lawrence Technological University Society of Physics Students. All rights
+        reserved.</p>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
